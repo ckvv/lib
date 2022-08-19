@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "NodeNext",
+    "declaration": true,
+    "module": "ESNext",
+    "outDir": "es",
+    "target": "ESNext",
+    "skipLibCheck": true,
+    "importsNotUsedAsValues": "error",
+    "noImplicitThis": true,
+    "strict": true,
+    "lib": [
+      "ESNext",
+      "DOM",
+    ],
+    "types": ["node"],
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
