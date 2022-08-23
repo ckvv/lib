@@ -79,7 +79,7 @@ const getRandomNum = (max = 1, min = 0, digits = 4) => {
 const getRandomStr = (length: number, dictionary = '0123456789abcdefghijklmnopqrstuvwxyz') => {
   let randomStr = ''
   for (let index = 0; index < length; index++)
-    randomStr += dictionary[getRandomNum(dictionary.length, 0, 0)]
+    randomStr += dictionary[getRandomNum(dictionary.length - 1, 0, 0)]
 
   return randomStr
 }

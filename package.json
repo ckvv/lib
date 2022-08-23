@@ -8,10 +8,10 @@
   "author": "chenkai",
   "license": "MIT",
   "type": "module",
-  "types": "./es/index.d.ts",
-  "main": "./es/index.js",
+  "types": "",
+  "main": "./esm/index.d.ts",
   "exports": {
-    ".": "./es/index.js",
+    ".": "./esm/index.js",
     "./*": "./*"
   },
   "packageManager": "pnpm@7.9.3",
@@ -29,9 +29,7 @@
   },
   "files": [
     "src",
-    "lib",
-    "es",
-    "cjs"
+    "esm"
   ],
   "devDependencies": {
     "husky": "^8.0.1",

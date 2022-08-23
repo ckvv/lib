@@ -1,19 +1,26 @@
 {
   "compilerOptions": {
-    "moduleResolution": "NodeNext",
     "declaration": true,
-    "module": "ESNext",
-    "outDir": "es",
     "target": "ESNext",
+    "outDir": "esm",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "skipLibCheck": true,
     "importsNotUsedAsValues": "error",
     "noImplicitThis": true,
+    "allowJs": false,
     "strict": true,
+    "noUnusedLocals": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "removeComments": false,
     "lib": [
       "ESNext",
       "DOM",
     ],
     "types": ["node"],
+    "rootDir": "."
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]

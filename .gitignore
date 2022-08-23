@@ -22,7 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-es/
 coverage/
-lib/
-dist/
+esm/
