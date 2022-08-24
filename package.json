@@ -25,7 +25,8 @@
     "release": "standard-version",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "tsc": "pnpm tsc",
-    "build": "tsc"
+    "build": "tsc",
+    "docs": "typedoc src/index.ts"
   },
   "files": [
     "src",
@@ -40,7 +41,8 @@
     "eslint": "^8.22.0",
     "typescript": "^4.7.4",
     "vitest": "0.22.1",
-    "@vitest/coverage-c8": "0.22.1"
+    "@vitest/coverage-c8": "0.22.1",
+    "typedoc": "0.23.10"
   },
   "lint-staged": {
     "*.{js,ts,mjs,cjs,tsx,jsx,vue}": [

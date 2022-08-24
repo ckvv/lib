@@ -2,6 +2,6 @@ module.exports = {
   extends: [
     '@antfu',
   ],
-  ignorePatterns: ['coverage/*', 'esm'],
+  ignorePatterns: ['coverage/*', 'esm', 'docs'],
   rules: {},
 }
