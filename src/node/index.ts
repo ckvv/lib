@@ -1,4 +1,4 @@
-import { type BinaryLike, createHash } from 'node:crypto'
+import { type BinaryLike, createHash } from 'node:crypto';
 
 /**
  * 计算数据的md5
@@ -6,9 +6,9 @@ import { type BinaryLike, createHash } from 'node:crypto'
  * @returns md5
  */
 function getMd5(data: BinaryLike): string {
-  return createHash('md5').update(data).digest('hex')
+  return createHash('md5').update(data).digest('hex');
 }
 
 export {
   getMd5,
-}
+};

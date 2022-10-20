@@ -10,23 +10,23 @@ const debounce = (callback: Function, wait: number, options: {
   middle?: boolean
   thisArg?: any
 } = {}): Function => {
-  const { immediate = false, middle = true, thisArg = null } = options
-  let timer: ReturnType < typeof setTimeout >
-  let restDate = new Date()
+  const { immediate = false, middle = true, thisArg = null } = options;
+  let timer: ReturnType < typeof setTimeout >;
+  let restDate = new Date();
   return function (...args: any[]) {
-    timer && clearTimeout(timer)
-    const isFirst = !timer
+    timer && clearTimeout(timer);
+    const isFirst = !timer;
     timer = setTimeout(() => {
-      callback.apply(thisArg, args)
-      restDate = new Date()
-    }, wait)
+      callback.apply(thisArg, args);
+      restDate = new Date();
+    }, wait);
     if ((new Date().getTime() - restDate.getTime() > wait && middle) || (isFirst && immediate)) {
-      clearTimeout(timer)
-      callback.apply(thisArg, args)
-      restDate = new Date()
+      clearTimeout(timer);
+      callback.apply(thisArg, args);
+      restDate = new Date();
     }
-  }
-}
+  };
+};
 
 /**
  * 阻塞当前执行n毫秒
@@ -36,10 +36,10 @@ const debounce = (callback: Function, wait: number, options: {
 const wait = async (wait: number) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(true)
-    }, wait)
-  })
-}
+      resolve(true);
+    }, wait);
+  });
+};
 
 /**
  * 返回参数类型
@@ -47,8 +47,8 @@ const wait = async (wait: number) => {
  * @returns 是否是函数
  */
 const toTypeString = (value: unknown) => {
-  return Object.prototype.toString.call(value)
-}
+  return Object.prototype.toString.call(value);
+};
 
 /**
  * 返回参数类型
@@ -56,8 +56,8 @@ const toTypeString = (value: unknown) => {
  * @returns type
  */
 const toRawType = (value: unknown) => {
-  return toTypeString(value).slice(8, -1)
-}
+  return toTypeString(value).slice(8, -1);
+};
 
 /**
  * 获取指定范围随机数
@@ -67,8 +67,8 @@ const toRawType = (value: unknown) => {
  * @returns 随机数
  */
 const getRandomNum = (max = 1, min = 0, digits = 4) => {
-  return Number((min + Math.random() * (max - min)).toFixed(digits))
-}
+  return Number((min + Math.random() * (max - min)).toFixed(digits));
+};
 
 /**
  * 获取随机字符串
@@ -77,12 +77,12 @@ const getRandomNum = (max = 1, min = 0, digits = 4) => {
  * @returns 随机字符串
  */
 const getRandomStr = (length: number, dictionary = '0123456789abcdefghijklmnopqrstuvwxyz') => {
-  let randomStr = ''
+  let randomStr = '';
   for (let index = 0; index < length; index++)
-    randomStr += dictionary[getRandomNum(dictionary.length - 1, 0, 0)]
+    randomStr += dictionary[getRandomNum(dictionary.length - 1, 0, 0)];
 
-  return randomStr
-}
+  return randomStr;
+};
 
 export {
   debounce,
@@ -90,4 +90,4 @@ export {
   toRawType,
   getRandomNum,
   getRandomStr,
-}
+};
