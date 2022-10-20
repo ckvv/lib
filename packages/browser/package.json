@@ -1,0 +1,14 @@
+{
+  "name": "@ckpack/browser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc --project tsconfig.json",
+    "clear": ""
+  },
+  "dependencies": {},
+  "keywords": [],
+  "author": "ckvv",
+  "license": "ISC"
+}

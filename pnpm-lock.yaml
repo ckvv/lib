@@ -1,28 +1,48 @@
 lockfileVersion: 5.4
 
-specifiers:
-  '@antfu/eslint-config': 0.27.0
-  '@types/node': 18.11.2
-  '@vitest/coverage-c8': 0.24.3
-  eslint: ^8.25.0
-  husky: ^8.0.1
-  lint-staged: ^13.0.3
-  standard-version: ^9.5.0
-  typedoc: 0.23.17
-  typescript: ^4.8.4
-  vitest: 0.24.3
+importers:
 
-devDependencies:
-  '@antfu/eslint-config': 0.27.0_z4bbprzjrhnsfa24uvmcbu7f5q
-  '@types/node': 18.11.2
-  '@vitest/coverage-c8': 0.24.3
-  eslint: 8.25.0
-  husky: 8.0.1
-  lint-staged: 13.0.3
-  standard-version: 9.5.0
-  typedoc: 0.23.17_typescript@4.8.4
-  typescript: 4.8.4
-  vitest: 0.24.3
+  .:
+    specifiers:
+      '@antfu/eslint-config': 0.27.0
+      '@ckpack/browser': workspace:*
+      '@ckpack/node': workspace:*
+      '@ckpack/tsconfig': workspace:*
+      '@vitest/coverage-c8': 0.24.3
+      eslint: ^8.25.0
+      husky: ^8.0.1
+      lint-staged: ^13.0.3
+      rimraf: 3.0.2
+      standard-version: ^9.5.0
+      typedoc: 0.23.17
+      typescript: ^4.8.4
+      vitest: 0.24.3
+    devDependencies:
+      '@antfu/eslint-config': 0.27.0_z4bbprzjrhnsfa24uvmcbu7f5q
+      '@ckpack/browser': link:packages/browser
+      '@ckpack/node': link:packages/node
+      '@ckpack/tsconfig': link:packages/tsconfig
+      '@vitest/coverage-c8': 0.24.3
+      eslint: 8.25.0
+      husky: 8.0.1
+      lint-staged: 13.0.3
+      rimraf: 3.0.2
+      standard-version: 9.5.0
+      typedoc: 0.23.17_typescript@4.8.4
+      typescript: 4.8.4
+      vitest: 0.24.3
+
+  packages/browser:
+    specifiers: {}
+
+  packages/node:
+    specifiers:
+      '@types/node': 18.11.2
+    devDependencies:
+      '@types/node': 18.11.2
+
+  packages/tsconfig:
+    specifiers: {}
 
 packages:
 

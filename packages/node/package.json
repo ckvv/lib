@@ -1,0 +1,17 @@
+{
+  "name": "@ckpack/node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc --project tsconfig.json",
+    "clear": ""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "18.11.2"
+  },
+  "keywords": [],
+  "author": "ckvv",
+  "license": "ISC"
+}

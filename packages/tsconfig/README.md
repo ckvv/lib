@@ -1,0 +1,5 @@
+# @ckpack/lib-tsconfig
+
+tsconfig。
+ 
+ 

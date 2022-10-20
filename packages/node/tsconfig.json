@@ -1,0 +1,6 @@
+{
+  "extends": "@ckpack/tsconfig/tsconfig.node.json",
+  "compilerOptions": {
+    "outDir": "dist",
+  }
+}

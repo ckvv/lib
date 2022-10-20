@@ -1,26 +1,5 @@
 {
-  "compilerOptions": {
-    "declaration": true,
-    "target": "ESNext",
-    "outDir": "esm",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "skipLibCheck": true,
-    "importsNotUsedAsValues": "error",
-    "noImplicitThis": true,
-    "allowJs": false,
-    "strict": true,
-    "noUnusedLocals": true,
-    "experimentalDecorators": true,
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "removeComments": false,
-    "lib": [
-      "ESNext",
-      "DOM",
-    ],
-    "types": ["node"],
-  },
-  "include": ["src/**/*"],
+  "extends": "@ckpack/tsconfig/tsconfig.json",
+  "include": ["packages/**/*"],
   "exclude": ["node_modules"]
 }
