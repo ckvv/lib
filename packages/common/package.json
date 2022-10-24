@@ -1,6 +1,6 @@
 {
   "name": "@ckvv/common",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "private": true,
   "description": "浏览器以及Node.js环境都能使用的工具函数库。",
   "type": "module",
@@ -15,8 +15,13 @@
     "clear": "rimraf esm"
   },
   "dependencies": {},
-  "keywords": ["lib", "common"],
-  "files": ["esm"],
+  "keywords": [
+    "lib",
+    "common"
+  ],
+  "files": [
+    "esm"
+  ],
   "typedoc": {
     "entryPoint": "./src/index.ts",
     "readmeFile": "./README.md",

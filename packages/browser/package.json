@@ -1,6 +1,6 @@
 {
   "name": "@ckvv/browser",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "private": true,
   "description": "依赖浏览器环境的工具函数库。",
   "type": "module",
@@ -15,8 +15,13 @@
     "clear": "rimraf esm"
   },
   "dependencies": {},
-  "keywords": ["lib", "browser"],
-  "files": ["esm"],
+  "keywords": [
+    "lib",
+    "browser"
+  ],
+  "files": [
+    "esm"
+  ],
   "typedoc": {
     "entryPoint": "./src/index.ts",
     "readmeFile": "./README.md",

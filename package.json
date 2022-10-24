@@ -1,7 +1,7 @@
 {
   "name": "@ckvv/lib",
-  "private": false,
-  "version": "0.0.4",
+  "private": true,
+  "version": "0.0.5",
   "description": "一个轻量级的工具函数库",
   "sideEffects": false,
   "repository": "https://github.com/ckvv/lib",
@@ -19,6 +19,7 @@
     "clear": "pnpm run --filter \"./packages/*\" clear",
     "docs": "typedoc --options ./typedoc.json",
     "publish": "pnpm --filter \"./packages/*\" publish",
+    "publish2": "changeset publish --registry=https://registry.npmjs.com/",
     "changeset": "changeset"
   },
   "dependencies": {},
@@ -34,11 +35,7 @@
     "@vitest/coverage-c8": "0.24.3",
     "rimraf": "3.0.2",
     "typedoc": "0.23.18",
-    "@types/node": "18.11.2",
-    "@ckvv/browser": "workspace:*",
-    "@ckvv/node": "workspace:*",
-    "@ckvv/common": "workspace:*",
-    "@ckvv/tsconfig": "workspace:*"
+    "@types/node": "18.11.2"
   },
   "lint-staged": {
     "*.{js,ts,mjs,cjs,tsx,jsx,vue}": [
