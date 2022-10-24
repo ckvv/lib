@@ -5,6 +5,9 @@
   "description": "tsconfig",
   "scripts": {},
   "keywords": [],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "ckvv",
   "license": "MIT"
 }

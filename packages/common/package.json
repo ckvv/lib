@@ -27,6 +27,9 @@
     "readmeFile": "./README.md",
     "tsconfig": "./tsconfig.json"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "ckvv",
   "license": "MIT"
 }
