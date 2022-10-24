@@ -35,7 +35,11 @@
     "@vitest/coverage-c8": "0.24.3",
     "rimraf": "3.0.2",
     "typedoc": "0.23.18",
-    "@types/node": "18.11.2"
+    "@types/node": "18.11.2",
+    "@ckvv/tsconfig": "workspace:*",
+    "@ckvv/node": "workspace:*",
+    "@ckvv/browser": "workspace:*",
+    "@ckvv/common": "workspace:*"
   },
   "lint-staged": {
     "*.{js,ts,mjs,cjs,tsx,jsx,vue}": [

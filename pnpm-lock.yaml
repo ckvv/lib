@@ -6,6 +6,10 @@ importers:
     specifiers:
       '@antfu/eslint-config': 0.27.0
       '@changesets/cli': ^2.25.0
+      '@ckvv/browser': workspace:*
+      '@ckvv/common': workspace:*
+      '@ckvv/node': workspace:*
+      '@ckvv/tsconfig': workspace:*
       '@types/node': 18.11.2
       '@vitest/coverage-c8': 0.24.3
       eslint: ^8.26.0
@@ -19,6 +23,10 @@ importers:
     devDependencies:
       '@antfu/eslint-config': 0.27.0_wyqvi574yv7oiwfeinomdzmc3m
       '@changesets/cli': 2.25.0
+      '@ckvv/browser': link:packages/browser
+      '@ckvv/common': link:packages/common
+      '@ckvv/node': link:packages/node
+      '@ckvv/tsconfig': link:packages/tsconfig
       '@types/node': 18.11.2
       '@vitest/coverage-c8': 0.24.3
       eslint: 8.26.0
