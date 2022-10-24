@@ -18,7 +18,7 @@
     "build": "pnpm clear && pnpm run --filter \"./packages/*\" build",
     "clear": "pnpm run --filter \"./packages/*\" clear",
     "docs": "typedoc --options ./typedoc.json",
-    "publish": "pnpm --filter \"./packages/browser\" publish",
+    "publish": "pnpm --filter \"./packages/*\" publish",
     "publish2": "changeset publish --registry=https://registry.npmjs.com/",
     "changeset": "changeset"
   },
