@@ -8,6 +8,10 @@
   "publishConfig": {
     "access": "public"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckvv/lib.git"
+  },
   "author": "ckvv",
   "license": "MIT"
 }

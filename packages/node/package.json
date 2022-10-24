@@ -1,6 +1,6 @@
 {
   "name": "@ckvv/node",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "依赖Node.js环境的工具函数库。",
   "type": "module",
@@ -14,7 +14,9 @@
     "build": "tsc --project tsconfig.json",
     "clear": "rimraf esm"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@ckvv/tsconfig": "../tsconfig"
+  },
   "keywords": [
     "lib",
     "node"
@@ -29,6 +31,10 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckvv/lib.git"
   },
   "author": "ckvv",
   "license": "MIT"

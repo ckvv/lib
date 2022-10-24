@@ -13,20 +13,18 @@
     "prepare": "husky install",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "release": "standard-version",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "build": "pnpm clear && pnpm run --filter \"./packages/*\" build",
     "clear": "pnpm run --filter \"./packages/*\" clear",
     "docs": "typedoc --options ./typedoc.json",
-    "publish": "pnpm --filter \"./packages/*\" publish",
-    "publish2": "changeset publish --registry=https://registry.npmjs.com/",
-    "changeset": "changeset"
+    "changeset": "changeset",
+    "version-packages": "changeset version && pnpm run lint && pnpm run build",
+    "release": "changeset publish --registry=https://registry.npmjs.com/"
   },
   "dependencies": {},
   "devDependencies": {
     "@changesets/cli": "^2.25.0",
     "husky": "^8.0.1",
-    "standard-version": "^9.5.0",
     "lint-staged": "^13.0.3",
     "@antfu/eslint-config": "0.27.0",
     "eslint": "^8.26.0",
@@ -36,17 +34,8 @@
     "rimraf": "3.0.2",
     "typedoc": "0.23.18",
     "@types/node": "18.11.2",
-    "@ckvv/tsconfig": "workspace:*",
-    "@ckvv/node": "workspace:*",
-    "@ckvv/browser": "workspace:*",
-    "@ckvv/common": "workspace:*"
+    "@ckvv/tsconfig": "workspace:*"
   },
-  "workspaces": [
-    "@ckvv/tsconfig",
-    "@ckvv/node",
-    "@ckvv/browser",
-    "@ckvv/common"
-  ],
   "lint-staged": {
     "*.{js,ts,mjs,cjs,tsx,jsx,vue}": [
       "eslint --fix"

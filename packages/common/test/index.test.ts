@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { toRawType } from '@ckvv/common';
+import { toRawType } from '../';
 
 describe('common', () => {
   test('toRawType', () => {

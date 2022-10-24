@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { getMd5 } from '@ckvv/node';
+import { getMd5 } from '../';
 
 describe('node', () => {
   test('getMd5', () => {
