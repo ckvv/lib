@@ -1,4 +1,4 @@
-# @ckpack/lib-tsconfig
+# @ckvv/lib-tsconfig
 
 tsconfig。
  

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPointStrategy": "packages",
+  "entryPoints": [
+    "packages/browser",
+    "packages/common",
+    "packages/node",
+  ],
+  "out": "docs"
+}

@@ -1,10 +1,10 @@
 {
-  "name": "@ckpack/lib",
+  "name": "@ckvv/lib",
   "private": false,
   "version": "0.0.1",
   "description": "一个轻量级的工具函数库",
   "sideEffects": false,
-  "repository": "https://github.com/ckpack/lib",
+  "repository": "https://github.com/ckvv/lib",
   "author": "chenkai",
   "license": "MIT",
   "type": "module",
@@ -20,12 +20,12 @@
     "prepare": "husky install",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "link:npm": "npm link ./ && npm link @ckpack/lib",
-    "link:pnpm": "pnpm link ./",
     "release": "standard-version",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "build": "pnpm run --filter \"./packages/*\" build",
-    "docs": "typedoc src/index.ts"
+    "build": "pnpm clear && pnpm run --filter \"./packages/*\" build",
+    "clear": "pnpm run --filter \"./packages/*\" clear",
+    "docs": "typedoc --options ./typedoc.json",
+    "publish": "pnpm publish --filter \"./packages/*\""
   },
   "files": [
     "src",
@@ -36,15 +36,17 @@
     "standard-version": "^9.5.0",
     "lint-staged": "^13.0.3",
     "@antfu/eslint-config": "0.27.0",
-    "eslint": "^8.25.0",
+    "eslint": "^8.26.0",
     "typescript": "^4.8.4",
     "vitest": "0.24.3",
     "@vitest/coverage-c8": "0.24.3",
     "rimraf": "3.0.2",
-    "typedoc": "0.23.17",
-    "@ckpack/browser": "workspace:*",
-    "@ckpack/node": "workspace:*",
-    "@ckpack/tsconfig": "workspace:*"
+    "typedoc": "0.23.18",
+    "@types/node": "18.11.2",
+    "@ckvv/browser": "workspace:*",
+    "@ckvv/node": "workspace:*",
+    "@ckvv/common": "workspace:*",
+    "@ckvv/tsconfig": "workspace:*"
   },
   "lint-staged": {
     "*.{js,ts,mjs,cjs,tsx,jsx,vue}": [

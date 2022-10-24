@@ -1,17 +1,22 @@
 {
-  "name": "@ckpack/node",
-  "version": "1.0.0",
+  "name": "@ckvv/node",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "type": "module",
+  "types": "esm/index.d.ts",
+  "main": "esm/index.js",
   "scripts": {
-    "build": "rimraf dist && tsc --project tsconfig.json",
-    "clear": ""
+    "build": "tsc --project tsconfig.json",
+    "clear": "rimraf esm"
   },
   "dependencies": {},
-  "devDependencies": {
-    "@types/node": "18.11.2"
+  "keywords": ["lib", "node"],
+  "files": ["esm"],
+  "typedoc": {
+    "entryPoint": "./src/index.ts",
+    "readmeFile": "./README.md",
+    "tsconfig": "./tsconfig.json"
   },
-  "keywords": [],
   "author": "ckvv",
   "license": "ISC"
 }

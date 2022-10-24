@@ -1,5 +1,9 @@
 {
-  "extends": "@ckpack/tsconfig/tsconfig.json",
+  "extends": "@ckvv/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM"],
+    "types": ["node"],
+  },
   "include": ["packages/**/*"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
 }

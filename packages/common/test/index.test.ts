@@ -1,9 +1,8 @@
 import { describe, expect, test } from 'vitest';
-import { common } from '@ckpack/lib';
+import { toRawType } from '@ckvv/common';
 
 describe('common', () => {
   test('toRawType', () => {
-    const { toRawType } = common;
     expect(toRawType(true)).toEqual('Boolean');
   });
 });

@@ -1,5 +1,5 @@
 {
-  "name": "@ckvv/browser",
+  "name": "@ckvv/common",
   "version": "0.0.1",
   "description": "",
   "type": "module",
@@ -10,7 +10,7 @@
     "clear": "rimraf esm"
   },
   "dependencies": {},
-  "keywords": ["lib", "browser"],
+  "keywords": ["lib", "common"],
   "files": ["esm"],
   "typedoc": {
     "entryPoint": "./src/index.ts",

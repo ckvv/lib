@@ -1,6 +1,7 @@
 {
-  "extends": "@ckpack/tsconfig/tsconfig.node.json",
+  "extends": "@ckvv/tsconfig/tsconfig.node.json",
   "compilerOptions": {
-    "outDir": "dist",
-  }
+    "outDir": "esm",
+  },
+  "include": ["src/**/*"],
 }
