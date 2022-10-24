@@ -18,10 +18,10 @@ jobs:
       - uses: pnpm/action-setup@v2.2.4
         with:
           version: 6.0.2
-      - run: npm install
-      - run: npm run docs:build
+      - run: pnpm install
+      - run: pnpm run docs
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/.vitepress/dist/
+          publish_dir: ./docs/
