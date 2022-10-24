@@ -18,7 +18,7 @@
     "build": "pnpm clear && pnpm run --filter \"./packages/*\" build",
     "clear": "pnpm run --filter \"./packages/*\" clear",
     "docs": "typedoc --options ./typedoc.json",
-    "publish": "pnpm publish --force --filter \"./packages/*\""
+    "publish": "pnpm --filter \"./packages/*\" publish"
   },
   "dependencies": {},
   "devDependencies": {
