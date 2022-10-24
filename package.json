@@ -8,14 +8,7 @@
   "author": "chenkai",
   "license": "MIT",
   "type": "module",
-  "types": "",
-  "main": "./esm/index.d.ts",
-  "exports": {
-    ".": "./esm/index.js",
-    "./*": "./*"
-  },
   "packageManager": "pnpm@7.13.5",
-  "dependencies": {},
   "scripts": {
     "prepare": "husky install",
     "test": "vitest",
@@ -27,10 +20,7 @@
     "docs": "typedoc --options ./typedoc.json",
     "publish": "pnpm publish --filter \"./packages/*\""
   },
-  "files": [
-    "src",
-    "esm"
-  ],
+  "dependencies": {},
   "devDependencies": {
     "husky": "^8.0.1",
     "standard-version": "^9.5.0",

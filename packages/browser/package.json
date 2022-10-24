@@ -5,6 +5,10 @@
   "type": "module",
   "types": "esm/index.d.ts",
   "main": "esm/index.js",
+  "exports": {
+    ".": "./esm/index.js",
+    "./*": "./*"
+  },
   "scripts": {
     "build": "tsc --project tsconfig.json",
     "clear": "rimraf esm"
