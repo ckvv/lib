@@ -1,10 +1,10 @@
 {
   "name": "@ckvv/tsconfig",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "description": "tsconfig",
   "scripts": {},
   "keywords": [],
   "author": "ckvv",
-  "license": "ISC"
+  "license": "MIT"
 }

@@ -1,6 +1,6 @@
 {
   "name": "@ckvv/browser",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "description": "依赖浏览器环境的工具函数库。",
   "type": "module",
@@ -23,5 +23,5 @@
     "tsconfig": "./tsconfig.json"
   },
   "author": "ckvv",
-  "license": "ISC"
+  "license": "MIT"
 }

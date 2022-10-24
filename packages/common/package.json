@@ -1,6 +1,6 @@
 {
   "name": "@ckvv/common",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "description": "浏览器以及Node.js环境都能使用的工具函数库。",
   "type": "module",
@@ -23,5 +23,5 @@
     "tsconfig": "./tsconfig.json"
   },
   "author": "ckvv",
-  "license": "ISC"
+  "license": "MIT"
 }
