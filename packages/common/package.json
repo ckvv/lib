@@ -2,7 +2,7 @@
   "name": "@ckvv/common",
   "version": "0.0.1",
   "private": true,
-  "description": "",
+  "description": "浏览器以及Node.js环境都能使用的工具函数库。",
   "type": "module",
   "types": "esm/index.d.ts",
   "main": "esm/index.js",
