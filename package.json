@@ -1,6 +1,6 @@
 {
   "name": "@ckvv/lib",
-  "private": true,
+  "private": false,
   "version": "0.0.5",
   "description": "一个轻量级的工具函数库",
   "sideEffects": false,
@@ -41,6 +41,12 @@
     "@ckvv/browser": "workspace:*",
     "@ckvv/common": "workspace:*"
   },
+  "workspaces": [
+    "@ckvv/tsconfig",
+    "@ckvv/node",
+    "@ckvv/browser",
+    "@ckvv/common"
+  ],
   "lint-staged": {
     "*.{js,ts,mjs,cjs,tsx,jsx,vue}": [
       "eslint --fix"
