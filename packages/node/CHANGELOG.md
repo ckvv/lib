@@ -1,5 +1,11 @@
 # @ckvv/node
 
+## 0.2.1
+
+### Patch Changes
+
+- 更新导出格式
+
 ## 0.2.0
 
 ### Minor Changes

@@ -1,6 +1,7 @@
 {
   "name": "@ckvv/browser",
-  "version": "0.2.0",
+  "version": "0.2.1",
+  "sideEffects": false,
   "private": false,
   "description": "依赖浏览器环境的工具函数库。",
   "type": "module",

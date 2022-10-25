@@ -1,8 +1,8 @@
 import { describe, expect, test } from 'vitest';
-import { toRawType } from '../';
+import { getRawType } from '../';
 
 describe('common', () => {
   test('toRawType', () => {
-    expect(toRawType(true)).toEqual('Boolean');
+    expect(getRawType(true)).toEqual('Boolean');
   });
 });

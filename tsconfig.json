@@ -4,7 +4,7 @@
     "lib": ["ESNext", "DOM"],
     "types": ["node"],
   },
-  "include": ["packages/**/*"],
+  "include": ["packages/**/*", "scripts"],
   "exclude": [
     "node_modules",
     "coverage",

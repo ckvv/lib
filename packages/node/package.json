@@ -1,7 +1,8 @@
 {
   "name": "@ckvv/node",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": false,
+  "sideEffects": false,
   "description": "依赖Node.js环境的工具函数库。",
   "type": "module",
   "types": "esm/index.d.ts",

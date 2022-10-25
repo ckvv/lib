@@ -1,9 +1,9 @@
 {
   "name": "@ckvv/lib",
+  "sideEffects": false,
   "private": false,
   "version": "0.0.5",
   "description": "一个轻量级的工具函数库",
-  "sideEffects": false,
   "repository": "https://github.com/ckvv/lib",
   "author": "chenkai",
   "license": "MIT",
@@ -11,10 +11,11 @@
   "packageManager": "pnpm@7.13.5",
   "scripts": {
     "prepare": "husky install",
+    "generate": "tsx  ./scripts/generate.ts",
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "build": "pnpm clear && pnpm run --filter \"./packages/*\" build",
+    "build": "pnpm generate && pnpm clear && pnpm run --filter \"./packages/*\" build",
     "clear": "pnpm run --filter \"./packages/*\" clear",
     "docs": "typedoc --options ./typedoc.json",
     "changeset": "changeset",
@@ -23,6 +24,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "tsx": "^3.11.0",
     "@changesets/cli": "^2.25.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
