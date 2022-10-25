@@ -31,22 +31,13 @@ importers:
       vitest: 0.24.3
 
   packages/browser:
-    specifiers:
-      '@ckvv/tsconfig': workspace:../tsconfig
-    dependencies:
-      '@ckvv/tsconfig': link:../tsconfig
+    specifiers: {}
 
   packages/common:
-    specifiers:
-      '@ckvv/tsconfig': workspace:../tsconfig
-    dependencies:
-      '@ckvv/tsconfig': link:../tsconfig
+    specifiers: {}
 
   packages/node:
-    specifiers:
-      '@ckvv/tsconfig': workspace:../tsconfig
-    dependencies:
-      '@ckvv/tsconfig': link:../tsconfig
+    specifiers: {}
 
   packages/tsconfig:
     specifiers: {}

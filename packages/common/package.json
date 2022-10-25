@@ -14,9 +14,7 @@
     "build": "tsc --project tsconfig.json",
     "clear": "rimraf esm"
   },
-  "dependencies": {
-    "@ckvv/tsconfig": "workspace:../tsconfig"
-  },
+  "dependencies": {},
   "keywords": [
     "lib",
     "common"
