@@ -1,6 +1,6 @@
 {
   "name": "@ckvv/node",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "private": false,
   "description": "依赖Node.js环境的工具函数库。",
   "type": "module",
@@ -15,7 +15,7 @@
     "clear": "rimraf esm"
   },
   "dependencies": {
-    "@ckvv/tsconfig": "../tsconfig"
+    "@ckvv/tsconfig": "workspace:../tsconfig"
   },
   "keywords": [
     "lib",

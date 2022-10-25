@@ -5,5 +5,10 @@
     "types": ["node"],
   },
   "include": ["packages/**/*"],
-  "exclude": ["node_modules", "coverage", "docs"],
+  "exclude": [
+    "node_modules",
+    "coverage",
+    "docs",
+    "**/esm/**",
+  ],
 }
