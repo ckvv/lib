@@ -11,7 +11,7 @@
 
 浏览器以及Node.js环境都能使用的工具函数库。
 
-## @ckvv/lib-node
+## @ckvv/node
 
 依赖Node.js环境的工具函数库。
  
