@@ -32,19 +32,19 @@ importers:
 
   packages/browser:
     specifiers:
-      '@ckvv/tsconfig': ../tsconfig
+      '@ckvv/tsconfig': workspace:../tsconfig
     dependencies:
       '@ckvv/tsconfig': link:../tsconfig
 
   packages/common:
     specifiers:
-      '@ckvv/tsconfig': ../tsconfig
+      '@ckvv/tsconfig': workspace:../tsconfig
     dependencies:
       '@ckvv/tsconfig': link:../tsconfig
 
   packages/node:
     specifiers:
-      '@ckvv/tsconfig': ../tsconfig
+      '@ckvv/tsconfig': workspace:../tsconfig
     dependencies:
       '@ckvv/tsconfig': link:../tsconfig
 
