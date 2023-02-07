@@ -5,4 +5,3 @@
 export async function clipboardWrite(data: string) {
   navigator.clipboard.writeText(data);
 }
-
