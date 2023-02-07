@@ -1,5 +1,11 @@
 # @ckvv/common
 
+## 0.3.0
+
+### Minor Changes
+
+- 添加 scheduler
+
 ## 0.2.1
 
 ### Patch Changes

@@ -4,7 +4,10 @@
   "private": false,
   "version": "0.0.5",
   "description": "一个轻量级的工具函数库",
-  "repository": "https://github.com/ckvv/lib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckvv/lib.git"
+  },
   "author": "chenkai",
   "license": "MIT",
   "type": "module",
@@ -22,7 +25,6 @@
     "version-packages": "changeset version && pnpm run lint && pnpm run build",
     "release": "changeset publish --registry=https://registry.npmjs.com/"
   },
-  "dependencies": {},
   "devDependencies": {
     "tsx": "^3.12.1",
     "@changesets/cli": "^2.26.0",
@@ -42,5 +44,14 @@
     "*.{js,ts,mjs,cjs,tsx,jsx,vue}": [
       "eslint --fix"
     ]
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/ckvv/lib/issues"
+  },
+  "homepage": "https://github.com/ckvv/lib#readme",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": []
 }
