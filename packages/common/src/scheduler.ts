@@ -1,4 +1,4 @@
-interface handlers {
+interface HandlersObj {
   handler: Function
   thisArg?: any
   args?: any[]
@@ -48,7 +48,7 @@ export class Scheduler {
     return res;
   }
 
-  async adds(handlers: Function[] | handlers[], callback: Function) {
+  async adds(handlers: Function[] | HandlersObj[], callback?: Function) {
     if (!Array.isArray(handlers))
       throw new Error('handlers is not a Array');
 
