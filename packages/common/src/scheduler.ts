@@ -1,5 +1,6 @@
+type AnyFun = (...args: any) => any;
 interface HandlersObj {
-  handler: Function
+  handler: AnyFun
   thisArg?: any
   args?: any[]
   callback?: Function
@@ -18,7 +19,7 @@ export class Scheduler {
     this.count = 0;
   }
 
-  async add(handler: Function, thisArg?: any, args?: any[], callback?: Function) {
+  async add<T extends AnyFun>(handler: T, thisArg?: any, args?: Parameters<T>, callback?: Function) {
     if (typeof handler !== 'function')
       throw new Error('handler is not a function');
 
@@ -48,7 +49,7 @@ export class Scheduler {
     return res;
   }
 
-  async adds(handlers: Function[] | HandlersObj[], callback?: Function) {
+  async adds(handlers: AnyFun[] | HandlersObj[], callback?: Function) {
     if (!Array.isArray(handlers))
       throw new Error('handlers is not a Array');
 
