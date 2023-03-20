@@ -1,5 +1,11 @@
 # @ckvv/common
 
+## 1.0.0
+
+### Major Changes
+
+- 更新依赖
+
 ## 0.3.0
 
 ### Minor Changes

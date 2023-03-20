@@ -1,6 +1,6 @@
 {
   "name": "@ckvv/common",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "sideEffects": false,
   "private": false,
   "description": "浏览器以及Node.js环境都能使用的工具函数库。",

@@ -1,5 +1,11 @@
 # @ckvv/browser
 
+## 1.0.0
+
+### Major Changes
+
+- 更新依赖
+
 ## 0.2.1
 
 ### Patch Changes
