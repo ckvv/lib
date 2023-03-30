@@ -1,3 +1,4 @@
+export * from './color.js';
 export * from './debounce.js';
 export * from './getRandomNum.js';
 export * from './getRandomStr.js';
